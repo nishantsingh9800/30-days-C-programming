@@ -8,14 +8,11 @@ int main()
 
     printf("Enter the number of words: ");
     scanf("%d", &n);
-
     printf("Enter the words:\n");
     for (int i = 0; i < n; i++)
     {
         scanf("%s", words[i]);
     }
-
-    // Sort words by length
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = i + 1; j < n; j++)

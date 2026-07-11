@@ -12,12 +12,10 @@ int main()
     struct Student s[100];
     int n;
 
-    printf("===== Student Record Management System =====\n");
+    printf(" Student Record Management System \n");
 
     printf("Enter number of students: ");
     scanf("%d", &n);
-
-    // Input student details
     for (int i = 0; i < n; i++)
     {
         printf("\nStudent %d\n", i + 1);
@@ -33,7 +31,7 @@ int main()
     }
 
     // Display student details
-    printf("\n===== Student Records =====\n");
+    printf("\n Student Records \n");
 
     printf("\nRoll No\tName\tMarks\n");
     printf("------------------------------\n");

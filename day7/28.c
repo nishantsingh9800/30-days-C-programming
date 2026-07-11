@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 int reverse = 0;
-
-// Recursive function to reverse the number
 void reverseNumber(int n) {
     if (n == 0)
         return;

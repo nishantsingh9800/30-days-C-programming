@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to check Perfect Number
 int isPerfect(int num)
 {
     int sum = 0;

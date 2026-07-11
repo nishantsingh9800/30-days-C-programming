@@ -34,8 +34,6 @@ int main()
             scanf("%d", &b[i][j]);
         }
     }
-
-    // Initialize result matrix
     for (int i = 0; i < r1; i++)
     {
         for (int j = 0; j < c2; j++)
@@ -43,8 +41,6 @@ int main()
             result[i][j] = 0;
         }
     }
-
-    // Matrix Multiplication
     for (int i = 0; i < r1; i++)
     {
         for (int j = 0; j < c2; j++)

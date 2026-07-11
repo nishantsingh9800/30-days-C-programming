@@ -13,12 +13,10 @@ int main()
     struct Book book[100];
     int n;
 
-    printf("===== Library Management System =====\n");
+    printf(" Library Management System \n");
 
     printf("Enter number of books: ");
     scanf("%d", &n);
-
-    // Input book details
     for(int i = 0; i < n; i++)
     {
         printf("\nBook %d\n", i + 1);
@@ -35,8 +33,6 @@ int main()
         printf("Enter Price: ");
         scanf("%f", &book[i].price);
     }
-
-    // Display book details
     printf("\n===== Library Records =====\n");
     printf("\nID\tTitle\tAuthor\tPrice\n");
     printf("---------------------------------------------\n");

@@ -10,7 +10,6 @@ int main() {
     printf("Enter the exponent (n): ");
     scanf("%d", &n);
 
-    // Calculate x^n without using pow()
     for (int i = 1; i <= n; i++) {
         result *= x;
     }

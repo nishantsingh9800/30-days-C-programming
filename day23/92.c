@@ -9,8 +9,6 @@ int main()
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
-
-    // Count frequency of each character
     for (int i = 0; str[i] != '\0'; i++)
     {
         if (str[i] != ' ' && str[i] != '\n')
@@ -18,8 +16,6 @@ int main()
             freq[(unsigned char)str[i]]++;
         }
     }
-
-    // Find maximum occurring character
     for (int i = 0; i < 256; i++)
     {
         if (freq[i] > max)

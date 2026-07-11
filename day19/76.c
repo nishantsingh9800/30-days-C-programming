@@ -17,8 +17,6 @@ int main()
             scanf("%d", &a[i][j]);
         }
     }
-
-    // Calculate principal diagonal sum
     for(int i = 0; i < n; i++)
     {
         sum += a[i][i];

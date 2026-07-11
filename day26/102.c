@@ -5,7 +5,7 @@ int main()
     char name[50];
     int age;
 
-    printf("===== Voting Eligibility System =====\n");
+    printf(" Voting Eligibility System \n");
 
     printf("Enter your name: ");
     scanf("%s", name);

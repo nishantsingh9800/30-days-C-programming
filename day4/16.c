@@ -18,7 +18,7 @@ int main() {
         int digits = 0;
         int sum = 0;
 
-        // Count the number of digits
+        
         while (temp != 0) {
             digits++;
             temp /= 10;
@@ -26,18 +26,15 @@ int main() {
 
         temp = num;
 
-        // Calculate the sum of each digit raised to the power of digits
         while (temp != 0) {
             int remainder = temp % 10;
             sum += (int)pow(remainder, digits);
             temp /= 10;
         }
 
-        // Special case for 0
         if (num == 0)
             sum = 0;
-
-        // Check Armstrong number
+        
         if (sum == originalNum)
             printf("%d ", originalNum);
     }

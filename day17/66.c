@@ -22,8 +22,6 @@ int main()
     {
         scanf("%d", &arr2[i]);
     }
-
-    // Add unique elements from first array
     for (int i = 0; i < n1; i++)
     {
         int found = 0;
@@ -42,8 +40,6 @@ int main()
             unionArr[count++] = arr1[i];
         }
     }
-
-    // Add unique elements from second array
     for (int i = 0; i < n2; i++)
     {
         int found = 0;

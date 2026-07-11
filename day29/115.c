@@ -14,7 +14,7 @@ int main()
 
     do
     {
-        printf("\n===== MENU-DRIVEN STRING OPERATIONS =====\n");
+        printf("\n MENU-DRIVEN STRING OPERATIONS \n");
         printf("1. Find Length\n");
         printf("2. Copy First String\n");
         printf("3. Concatenate Strings\n");

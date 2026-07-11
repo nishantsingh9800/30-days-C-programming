@@ -14,7 +14,7 @@ int main()
 {
     struct Ticket t;
 
-    printf("===== Ticket Booking System =====\n");
+    printf(" Ticket Booking System \n");
 
     printf("Enter Ticket Number: ");
     scanf("%d", &t.ticketNo);
@@ -30,11 +30,9 @@ int main()
 
     printf("Enter Fare Per Seat: ");
     scanf("%f", &t.farePerSeat);
-
-    // Calculate total fare
     t.totalFare = t.seats * t.farePerSeat;
 
-    printf("\n===== Ticket Details =====\n");
+    printf("\n Ticket Details \n");
     printf("Ticket Number  : %d\n", t.ticketNo);
     printf("Passenger Name : %s\n", t.passengerName);
     printf("Destination    : %s\n", t.destination);

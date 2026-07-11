@@ -38,7 +38,7 @@ int main()
     // Calculate Net Salary
     emp.netSalary = emp.basicSalary + emp.hra + emp.da - emp.pf;
 
-    printf("\n===== Salary Details =====\n");
+    printf("\n Salary Details \n");
     printf("Employee ID   : %d\n", emp.empId);
     printf("Employee Name : %s\n", emp.name);
     printf("Basic Salary  : %.2f\n", emp.basicSalary);

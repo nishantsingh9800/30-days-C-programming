@@ -7,8 +7,6 @@ int main()
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
-
-    // Calculate string length
     while (str[length] != '\0' && str[length] != '\n')
     {
         length++;

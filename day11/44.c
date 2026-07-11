@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to calculate factorial
 long long factorial(int n)
 {
     long long fact = 1;

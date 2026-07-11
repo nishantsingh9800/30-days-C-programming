@@ -5,12 +5,10 @@ int main()
     int rollNo[100], marks[100], n, i;
     char name[100][50];
 
-    printf("===== Student Record System =====\n");
+    printf(" Student Record System \n");
 
     printf("Enter number of students: ");
     scanf("%d", &n);
-
-    // Input student details
     for(i = 0; i < n; i++)
     {
         printf("\nStudent %d\n", i + 1);
@@ -24,9 +22,7 @@ int main()
         printf("Enter Marks: ");
         scanf("%d", &marks[i]);
     }
-
-    // Display student records
-    printf("\n===== Student Records =====\n");
+    printf("\n Student Records \n");
     printf("-------------------------------------------------\n");
     printf("Roll No\tName\t\tMarks\n");
     printf("-------------------------------------------------\n");

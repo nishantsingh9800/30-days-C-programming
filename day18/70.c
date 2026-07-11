@@ -13,8 +13,6 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-
-    // Selection Sort
     for(i = 0; i < n - 1; i++)
     {
         minIndex = i;
@@ -26,8 +24,6 @@ int main()
                 minIndex = j;
             }
         }
-
-        // Swap the smallest element with current element
         temp = arr[i];
         arr[i] = arr[minIndex];
         arr[minIndex] = temp;

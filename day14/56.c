@@ -7,8 +7,6 @@ int main()
 
     printf("Enter the number of elements: ");
     scanf("%d", &n);
-
-    // Input array elements
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++)
     {
@@ -20,8 +18,6 @@ int main()
     for (int i = 0; i < n; i++)
     {
         int isDuplicate = 0;
-
-        // Check if current element has already been printed
         for (int k = 0; k < i; k++)
         {
             if (arr[i] == arr[k])
@@ -33,8 +29,6 @@ int main()
 
         if (isDuplicate)
             continue;
-
-        // Count occurrences
         int count = 0;
         for (int j = 0; j < n; j++)
         {

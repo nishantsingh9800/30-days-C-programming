@@ -10,7 +10,7 @@ int main()
 
     do
     {
-        printf("\n===== MENU-DRIVEN ARRAY OPERATIONS =====\n");
+        printf("\n MENU-DRIVEN ARRAY OPERATIONS \n");
         printf("1. Insert Elements\n");
         printf("2. Display Elements\n");
         printf("3. Search Element\n");

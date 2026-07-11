@@ -12,12 +12,10 @@ int main()
     struct Employee emp[100];
     int n;
 
-    printf("===== Employee Management System =====\n");
+    printf(" Employee Management System \n");
 
     printf("Enter number of employees: ");
     scanf("%d", &n);
-
-    // Input employee details
     for (int i = 0; i < n; i++)
     {
         printf("\nEmployee %d\n", i + 1);
@@ -31,9 +29,7 @@ int main()
         printf("Enter Salary: ");
         scanf("%f", &emp[i].salary);
     }
-
-    // Display employee records
-    printf("\n===== Employee Records =====\n");
+    printf("\n Employee Records \n");
     printf("\nID\tName\tSalary\n");
     printf("--------------------------------\n");
 

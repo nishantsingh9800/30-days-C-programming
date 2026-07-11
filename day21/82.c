@@ -7,14 +7,10 @@ int main()
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
-
-    // Find string length
     while (str[length] != '\0' && str[length] != '\n')
     {
         length++;
     }
-
-    // Reverse the string
     for (int i = 0; i < length / 2; i++)
     {
         temp = str[i];

@@ -12,12 +12,10 @@ int main()
     struct Contact contact[100];
     int n;
 
-    printf("===== Contact Management System =====\n");
+    printf(" Contact Management System \n");
 
     printf("Enter number of contacts: ");
     scanf("%d", &n);
-
-    // Input contact details
     for (int i = 0; i < n; i++)
     {
         printf("\nContact %d\n", i + 1);
@@ -31,9 +29,7 @@ int main()
         printf("Enter Email: ");
         scanf("%s", contact[i].email);
     }
-
-    // Display contact details
-    printf("\n===== Contact List =====\n");
+    printf("\n Contact List \n");
     printf("\nName\tPhone\t\tEmail\n");
     printf("------------------------------------------------------\n");
 

@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// Function to check Armstrong number
 int isArmstrong(int num)
 {
     int original = num;
@@ -9,7 +8,6 @@ int isArmstrong(int num)
     int sum = 0;
     int remainder;
 
-    // Count number of digits
     int temp = num;
     while (temp != 0)
     {
@@ -17,13 +15,11 @@ int isArmstrong(int num)
         temp /= 10;
     }
 
-    // Special case for 0
     if (num == 0)
         digits = 1;
 
     temp = num;
 
-    // Calculate sum of digits raised to the power of digits
     while (temp != 0)
     {
         remainder = temp % 10;
@@ -31,7 +27,6 @@ int isArmstrong(int num)
         temp /= 10;
     }
 
-    // Special case for 0
     if (num == 0)
         sum = 0;
 

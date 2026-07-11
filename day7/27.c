@@ -15,7 +15,7 @@ int main() {
     scanf("%d", &num);
 
     if (num < 0)
-        num = -num;   // Handle negative numbers
+        num = -num;   
 
     printf("Sum of digits = %d\n", sumOfDigits(num));
 

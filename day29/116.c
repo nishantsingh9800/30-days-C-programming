@@ -13,12 +13,10 @@ int main()
     struct Product p[100];
     int n, i;
 
-    printf("===== Inventory Management System =====\n");
+    printf(" Inventory Management System \n");
 
     printf("Enter number of products: ");
-    scanf("%d", &n);
-
-    // Input product details
+    scanf("%d",n);
     for(i = 0; i < n; i++)
     {
         printf("\nProduct %d\n", i + 1);
@@ -35,8 +33,6 @@ int main()
         printf("Enter Price: ");
         scanf("%f", &p[i].price);
     }
-
-    // Display inventory
     printf("\n===== Inventory Details =====\n");
     printf("------------------------------------------------------------\n");
     printf("ID\tProduct\t\tQuantity\tPrice\n");

@@ -4,8 +4,6 @@
 
 int roll[MAX], marks[MAX], count = 0;
 char name[MAX][50];
-
-// Function to add student
 void addStudent()
 {
     printf("\nEnter Roll Number: ");
@@ -16,13 +14,9 @@ void addStudent()
 
     printf("Enter Marks: ");
     scanf("%d", &marks[count]);
-
     count++;
-
     printf("Student Added Successfully!\n");
 }
-
-// Function to display students
 void displayStudents()
 {
     int i;
@@ -46,8 +40,6 @@ void displayStudents()
                marks[i]);
     }
 }
-
-// Function to search student
 void searchStudent()
 {
     int id, i;
@@ -76,7 +68,7 @@ int main()
 
     do
     {
-        printf("\n===== STUDENT MANAGEMENT SYSTEM =====\n");
+        printf("\n STUDENT MANAGEMENT SYSTEM \n");
         printf("1. Add Student\n");
         printf("2. Display Students\n");
         printf("3. Search Student\n");

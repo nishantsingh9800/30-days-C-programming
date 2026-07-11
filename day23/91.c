@@ -10,8 +10,6 @@ int main()
 
     printf("Enter second string: ");
     fgets(str2, sizeof(str2), stdin);
-
-    // Count frequency of first string
     for (int i = 0; str1[i] != '\0'; i++)
     {
         if (str1[i] != ' ' && str1[i] != '\n')
@@ -19,8 +17,6 @@ int main()
             freq[(unsigned char)str1[i]]++;
         }
     }
-
-    // Subtract frequency of second string
     for (int i = 0; str2[i] != '\0'; i++)
     {
         if (str2[i] != ' ' && str2[i] != '\n')
@@ -28,8 +24,6 @@ int main()
             freq[(unsigned char)str2[i]]--;
         }
     }
-
-    // Check frequencies
     for (int i = 0; i < 256; i++)
     {
         if (freq[i] != 0)

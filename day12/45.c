@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to check palindrome
 int isPalindrome(int num)
 {
     int original = num;

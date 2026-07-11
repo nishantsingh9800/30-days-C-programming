@@ -7,7 +7,7 @@ int main()
 
     do
     {
-        printf("\n===== ATM Simulation =====\n");
+        printf("\n ATM Simulation \n");
         printf("1. Check Balance\n");
         printf("2. Deposit Money\n");
         printf("3. Withdraw Money\n");

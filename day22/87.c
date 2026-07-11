@@ -7,8 +7,6 @@ int main()
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
-
-    // Count frequency of each character
     for (int i = 0; str[i] != '\0'; i++)
     {
         if (str[i] != ' ' && str[i] != '\n')
@@ -18,8 +16,6 @@ int main()
     }
 
     printf("\nCharacter Frequencies:\n");
-
-    // Print frequencies
     for (int i = 0; i < 256; i++)
     {
         if (freq[i] != 0)

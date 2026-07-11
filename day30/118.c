@@ -12,13 +12,9 @@ int main()
 {
     struct Book book[100];
     int n, i, searchId, found = 0;
-
-    printf("===== Mini Library System =====\n");
-
+    printf(" Mini Library System \n");
     printf("Enter number of books: ");
     scanf("%d", &n);
-
-    // Input book details
     for(i = 0; i < n; i++)
     {
         printf("\nBook %d\n", i + 1);
@@ -35,8 +31,6 @@ int main()
         printf("Enter Quantity: ");
         scanf("%d", &book[i].quantity);
     }
-
-    // Display all books
     printf("\n===== Library Records =====\n");
     printf("-------------------------------------------------------------\n");
     printf("ID\tTitle\t\tAuthor\t\tQuantity\n");
@@ -51,7 +45,6 @@ int main()
                book[i].quantity);
     }
 
-    // Search by Book ID
     printf("\nEnter Book ID to search: ");
     scanf("%d", &searchId);
 

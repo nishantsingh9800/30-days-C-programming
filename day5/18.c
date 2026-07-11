@@ -12,7 +12,6 @@ int main() {
     while (num != 0) {
         remainder = num % 10;
 
-        // Calculate factorial of the digit
         int fact = 1;
         for (int i = 1; i <= remainder; i++) {
             fact *= i;

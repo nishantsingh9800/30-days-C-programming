@@ -17,8 +17,6 @@ int main()
 
     printf("Enter number of employees: ");
     scanf("%d", &n);
-
-    // Input employee details
     for(i = 0; i < n; i++)
     {
         printf("\nEmployee %d\n", i + 1);
@@ -35,8 +33,6 @@ int main()
         printf("Enter Salary: ");
         scanf("%f", &emp[i].salary);
     }
-
-    // Display all employee records
     printf("\n===== Employee Records =====\n");
     printf("-------------------------------------------------------------\n");
     printf("ID\tName\t\tDepartment\tSalary\n");
@@ -50,8 +46,6 @@ int main()
                emp[i].department,
                emp[i].salary);
     }
-
-    // Search employee
     printf("\nEnter Employee ID to search: ");
     scanf("%d", &searchId);
 

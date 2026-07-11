@@ -35,7 +35,6 @@ int main()
 
     s.percentage = s.total / 5.0;
 
-    // Grade Calculation
     if(s.percentage >= 90)
         s.grade = 'A';
     else if(s.percentage >= 75)
@@ -47,7 +46,7 @@ int main()
     else
         s.grade = 'F';
 
-    printf("\n===== Student Marksheet =====\n");
+    printf("\n Student Marksheet \n");
     printf("Roll Number : %d\n", s.rollNo);
     printf("Name        : %s\n", s.name);
 

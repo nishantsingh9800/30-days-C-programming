@@ -66,7 +66,7 @@ int main()
     if (answer == 3)
         score++;
 
-    printf("\n===== Quiz Result =====\n");
+    printf("\n Quiz Result \n");
     printf("Your Score = %d/5\n", score);
 
     if (score == 5)

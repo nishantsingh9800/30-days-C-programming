@@ -29,8 +29,6 @@ int main()
     for (int i = 0; i < n1; i++)
     {
         int duplicate = 0;
-
-        // Skip duplicate elements in first array
         for (int k = 0; k < i; k++)
         {
             if (arr1[i] == arr1[k])
@@ -42,8 +40,6 @@ int main()
 
         if (duplicate)
             continue;
-
-        // Check if element exists in second array
         for (int j = 0; j < n2; j++)
         {
             if (arr1[i] == arr2[j])

@@ -30,7 +30,6 @@ int main()
 
     for (int i = 0; i < n1; i++)
     {
-        // Skip duplicates in first array
         int duplicate = 0;
         for (int k = 0; k < i; k++)
         {

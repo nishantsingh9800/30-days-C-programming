@@ -10,19 +10,13 @@ int main()
 
     printf("Enter second string: ");
     scanf("%s", str2);
-
-    // Check if lengths are equal
     if (strlen(str1) != strlen(str2))
     {
         printf("Strings are Not Rotations.\n");
         return 0;
     }
-
-    // Concatenate first string with itself
     strcpy(temp, str1);
     strcat(temp, str1);
-
-    // Check if second string exists in concatenated string
     if (strstr(temp, str2) != NULL)
         printf("Strings are Rotations.\n");
     else

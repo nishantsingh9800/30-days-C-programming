@@ -14,13 +14,9 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-
-    // Find maximum frequency element
     for(int i = 0; i < n; i++)
     {
         int count = 1;
-
-        // Skip duplicate elements already counted
         int visited = 0;
         for(int k = 0; k < i; k++)
         {

@@ -7,19 +7,13 @@ int main()
 
     printf("Enter the number of elements: ");
     scanf("%d", &n);
-
-    // Input array elements
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
     }
-
-    // Input element to search
     printf("Enter the element to search: ");
     scanf("%d", &key);
-
-    // Linear Search
     for (int i = 0; i < n; i++)
     {
         if (arr[i] == key)

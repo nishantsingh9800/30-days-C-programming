@@ -9,15 +9,11 @@ int main()
 
     printf("Enter the number of elements: ");
     scanf("%d", &n);
-
-    // Input array elements
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
     }
-
-    // Find largest and second largest
     for (int i = 0; i < n; i++)
     {
         if (arr[i] > largest)

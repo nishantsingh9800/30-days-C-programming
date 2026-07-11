@@ -7,19 +7,13 @@ int main()
 
     printf("Enter first string: ");
     scanf("%s", str1);
-
     printf("Enter second string: ");
     scanf("%s", str2);
-
-    // Mark characters of first string
     for (int i = 0; str1[i] != '\0'; i++)
     {
         freq[(unsigned char)str1[i]] = 1;
     }
-
     printf("Common Characters: ");
-
-    // Print common characters only once
     for (int i = 0; str2[i] != '\0'; i++)
     {
         if (freq[(unsigned char)str2[i]] == 1)

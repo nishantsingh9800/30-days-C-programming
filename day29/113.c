@@ -1,49 +1,69 @@
 #include <stdio.h>
 
-struct Contact
-{
-    char name[50];
-    char phone[15];
-    char email[50];
-};
-
 int main()
 {
-    struct Contact contact[100];
-    int n;
+    int choice;
+    float num1, num2, result;
 
-    printf("===== Contact Management System =====\n");
-
-    printf("Enter number of contacts: ");
-    scanf("%d", &n);
-
-    // Input contact details
-    for (int i = 0; i < n; i++)
+    do
     {
-        printf("\nContact %d\n", i + 1);
+        printf("\n MENU-DRIVEN CALCULATOR \n");
+        printf("1. Addition\n");
+        printf("2. Subtraction\n");
+        printf("3. Multiplication\n");
+        printf("4. Division\n");
+        printf("5. Exit\n");
 
-        printf("Enter Name: ");
-        scanf("%s", contact[i].name);
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
 
-        printf("Enter Phone Number: ");
-        scanf("%s", contact[i].phone);
+        if (choice >= 1 && choice <= 4)
+        {
+            printf("Enter first number: ");
+            scanf("%f", &num1);
 
-        printf("Enter Email: ");
-        scanf("%s", contact[i].email);
-    }
+            printf("Enter second number: ");
+            scanf("%f", &num2);
+        }
 
-    // Display contact details
-    printf("\n===== Contact List =====\n");
-    printf("\nName\tPhone\t\tEmail\n");
-    printf("------------------------------------------------------\n");
+        switch (choice)
+        {
+        case 1:
+            result = num1 + num2;
+            printf("Result = %.2f\n", result);
+            break;
 
-    for (int i = 0; i < n; i++)
-    {
-        printf("%s\t%s\t%s\n",
-               contact[i].name,
-               contact[i].phone,
-               contact[i].email);
-    }
+        case 2:
+            result = num1 - num2;
+            printf("Result = %.2f\n", result);
+            break;
+
+        case 3:
+            result = num1 * num2;
+            printf("Result = %.2f\n", result);
+            break;
+
+        case 4:
+            if (num2 != 0)
+            {
+                result = num1 / num2;
+                printf("Result = %.2f\n", result);
+            }
+            else
+            {
+                printf("Error! Division by zero is not allowed.\n");
+            }
+            break;
+
+        case 5:
+            printf("Exiting Calculator...\n");
+            break;
+
+        default:
+            printf("Invalid Choice!\n");
+        }
+
+    } while (choice != 5);
 
     return 0;
 }

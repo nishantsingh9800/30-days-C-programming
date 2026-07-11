@@ -13,7 +13,7 @@ int main()
     int choice;
     float amount;
 
-    printf("===== Bank Account System =====\n");
+    printf(" Bank Account System \n");
 
     printf("Enter Account Number: ");
     scanf("%d", &acc.accountNo);
@@ -26,7 +26,7 @@ int main()
 
     do
     {
-        printf("\n===== MENU =====\n");
+        printf("\n MENU \n");
         printf("1. Deposit\n");
         printf("2. Withdraw\n");
         printf("3. Check Balance\n");

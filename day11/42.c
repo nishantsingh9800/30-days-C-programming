@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to find the maximum of two numbers
 int maximum(int a, int b)
 {
     if (a > b)

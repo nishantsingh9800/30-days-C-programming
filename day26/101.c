@@ -5,12 +5,10 @@
 int main()
 {
     int number, guess, attempts = 0;
-
-    // Generate random number between 1 and 100
     srand(time(0));
     number = rand() % 100 + 1;
 
-    printf("===== Number Guessing Game =====\n");
+    printf(" Number Guessing Game \n");
     printf("Guess a number between 1 and 100\n");
 
     do

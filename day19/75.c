@@ -19,8 +19,6 @@ int main()
             scanf("%d", &a[i][j]);
         }
     }
-
-    // Find transpose
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)

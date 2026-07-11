@@ -14,8 +14,6 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-
-    // Remove duplicates
     for (int i = 0; i < n; i++)
     {
         int duplicate = 0;
